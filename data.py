@@ -50,8 +50,8 @@ sampler = WeightedRandomSampler(source_weights, len(source_train_ds.labels))
 source_train_dl = DataLoader(dataset=source_train_ds, batch_size=args.data.dataloader.batch_size,
                              sampler=sampler, num_workers=args.data.dataloader.data_workers, drop_last=True)
 source_test_dl = DataLoader(dataset=source_test_ds, batch_size=args.data.dataloader.batch_size, shuffle=False,
-                             num_workers=1, drop_last=False)
+                             num_workers=0, drop_last=False)
 target_train_dl = DataLoader(dataset=target_train_ds, batch_size=args.data.dataloader.batch_size,shuffle=True,
                              num_workers=args.data.dataloader.data_workers, drop_last=True)
 target_test_dl = DataLoader(dataset=target_test_ds, batch_size=args.data.dataloader.batch_size, shuffle=False,
-                             num_workers=1, drop_last=False)
+                             num_workers=0, drop_last=False)

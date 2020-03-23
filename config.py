@@ -33,9 +33,9 @@ if args.data.dataset.name == 'office':
     path=args.data.dataset.root_path,
     domains=['amazon', 'dslr', 'webcam'],
     files=[
-        'amazon_reorgnized.txt',
-        'dslr_reorgnized.txt',
-        'webcam_reorgnized.txt'
+        'amazon.txt',
+        'dslr.txt',
+        'webcam.txt'
     ],
     prefix=args.data.dataset.root_path)
 elif args.data.dataset.name == 'officehome':
