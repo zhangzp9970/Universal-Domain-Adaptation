@@ -24,7 +24,7 @@ train:
   momentum: 0.9
 
 test:
-  test_interval: 500 # interval of two continuous test phase
+  test_interval: 50 # interval of two continuous test phase
   test_only: True # test a given model and exit
   resume_file: D:/code/Universal-Domain-Adaptation/log/Mar23_13-37-08/best.pkl # model to test
   w_0: -0.5 # hyper-parameter w_0
